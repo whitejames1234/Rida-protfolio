@@ -49,11 +49,7 @@ const [togale , setTogale] = useState(false);
       </ul>
 
      <div className="hidden md:flex items-center gap-6  " >
-     <select name="lange" className=" bg-transparent fill-none text-[14px] text-yellow-50 font-semibold px-2 py-2 border-2 border-yellow-50 " >
-        <option value="english" className=" bg-primary ">Eng</option>
-        <option value="arabic" className="bg-primary ">Arb</option>
-      </select>
-      <NavLink to="/#" className={`hidden md:flex !text-primaryDark font-semibold	 bg-secondary px-[24px] py-[10px] border-2 border-yellow-50
+      <NavLink to="/#" className={`hidden md:flex !text-primaryDark font-semibold	 bg-secondary px-[24px] py-[8px] border-2 border-yellow-50
        ${styles.mainText}  `} > Protgolio</NavLink>
       </div>
      

@@ -14,7 +14,7 @@ function Featued() {
         </div>
 
         <div className="w-3/4 ">
-         <Marquee direction="right" speed={80} pauseOnHover={true} delay={2} className="cursor-pointer " >
+         <Marquee direction="left" speed={80} pauseOnHover={true} delay={2} className="cursor-pointer " >
           {
             techStack.map((item, i) =><div key={i} className="ml-16 ">
             <img src={item} alt="" className="h-14 w-auto " />
