@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee';
 
 function Featued() {
   return (
-      <section className="bg-primary py-[80px] border-b-4 border-x-4 border-secondary px-[100px] flex items-center gap-12 ">
+      <section className="bg-primary py-[60px] border-b-4 border-x-4 border-secondary px-[100px] flex items-center gap-12 ">
 
         <div className="w-1/5 flex items-center gap-8"> 
           <h4 className ={`${styles.smallHeading} uppercase `} >tech stack </h4>
