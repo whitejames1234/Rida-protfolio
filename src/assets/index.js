@@ -31,6 +31,9 @@ import upwork from "./upwork.png";
 import webDev from "./webDev.png"
 import webDesing from "./webDesing.png"
 
+import foodSite from "./foodSite.png";
+import carsSite from "./carsSite.png";
+
 export {
   logo,
   menu, 
@@ -61,6 +64,9 @@ export {
 
  webDev,
  webDesing,
+
+ foodSite,
+ carsSite,
 };
 
 import html from "./html.png";
@@ -73,3 +79,4 @@ import node from "./node.png";
 import mongodb from "./mongodb.png";
 
 export const techStack = [html, css, scss, javascript ,react, tailwaind, node, mongodb] ;
+

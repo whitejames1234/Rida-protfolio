@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Nav />
     <Routes>
-      <Route path="/Rida-protfolio/"  element={ <Home /> } /> 
+      <Route path="/"  element={ <Home /> } /> 
     </Routes>
   </BrowserRouter>
   )

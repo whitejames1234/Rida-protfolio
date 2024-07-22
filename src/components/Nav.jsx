@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 import { motion } from "framer-motion";
 
 import {  logo } from "../assets/index";
@@ -19,7 +19,7 @@ const [togale , setTogale] = useState(false);
       <div 
       className=" px-5 ss:px-10 md:px-[80px] lg:px-[100px] flex justify-between items-center my-[10px] " >
       {/* header logo */}
-      <img src={` ${ logo}`} alt="rida labiad logo" className="w-[136px] ss:w-[146px] lg:w-[220px] h-auto " />
+      <img src={` ${ logo}`} alt="rida labiad logo" className="w-[136px] ss:w-[146px] lg:w-[220px] h-auto cursor-pointer " />
       
       {/* mobile menu/slose icons */}
       <div className=" cursor-pointer md:hidden w-[30px]  z-10 "  
@@ -45,12 +45,12 @@ const [togale , setTogale] = useState(false);
       {/* desktop nav links verging */}
       <ul className=" hidden md:flex gap-8 " > 
       {sitLinks.map((link, i)=> <li key={i} className= {`font-semibold 	cursor-pointer hover:text-secondary transition-colors
-       duration-500	ease-in-out	 ${styles.mainText}`} >{link} </li> ) }
+       duration-500	ease-in-out	 ${styles.mainText}`} ><HashLink to={`#${link}`}> {link} </HashLink> </li> ) }
       </ul>
 
      <div className="hidden md:flex items-center gap-6  " >
-      <NavLink to="/#" className={`hidden md:flex !text-primaryDark font-semibold	 bg-secondary px-[24px] py-[8px] border-2 border-yellow-50
-       ${styles.mainText}  `} > Protgolio</NavLink>
+      <HashLink to="#protfolio" className={`hidden md:flex !text-primaryDark font-semibold	 bg-secondary px-[24px] py-[8px] border-2 border-yellow-50
+       ${styles.mainText}  `} > Protgolio</HashLink>
       </div>
      
       </div>

@@ -1,6 +1,6 @@
 import styles from "./style";
 import {heroImg,  welcome} from "../assets/index";
-import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 import { motion } from "framer-motion"
 
 
@@ -29,8 +29,8 @@ function Hero() {
          </p>
 
          <div className="flex iteme-center gap-10 mt-4 " >
-          <NavLink to="/#" className={` ${styles.mainText}  ${styles.btn}  `} > Contact </NavLink>
-          <NavLink to="/#" className={`!bg-primary border-2 border-yellow-50 hover:!text-yellow-50 hover:!bg-primaryDark ${styles.mainText} ${styles.btn}  `} >About</NavLink>
+          <HashLink to="#Contact" className={` ${styles.mainText}  ${styles.btn}  `} > Contact </HashLink>
+          <HashLink to="#About" className={`!bg-primary border-2 border-yellow-50 hover:!text-yellow-50 hover:!bg-primaryDark ${styles.mainText} ${styles.btn}  `} >About</HashLink>
          </div>
 
       </div>

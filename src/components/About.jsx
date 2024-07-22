@@ -7,7 +7,7 @@ import Upwork from "../ui/Upwork";
 
 function About() {
   return (
-    <section className= {` ${styles.section}  bg-primaryDark py-[80px] text-white `} >
+    <section id="About" className= {` ${styles.section}  bg-primaryDark py-[80px] text-white `} >
 
       <div className=" grid grid-cols-6 "  >
         <div className="col-span-2 border-secondary border-4 px-6 py-6 flex flex-col justify-center gap-2	">
@@ -24,7 +24,7 @@ function About() {
             <Upwork />
           </div>
         </div>
-        <div className="col-span-4  border-secondary border-4 border-l-0 px-6 py-6 flex flex-col gap-4 ">
+        <div id="#about" className="col-span-4  border-secondary border-4 border-l-0 px-6 py-6 flex flex-col gap-4 ">
         <h3 className={`${styles.smallHeading} mt-4 !text-secondary `} >What We Provide</h3>
         <p className={`${styles.mainText} `} >
         I specialize in back and frontend development, seamlessly integrating the two to deliver 

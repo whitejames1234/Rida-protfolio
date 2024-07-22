@@ -15,7 +15,7 @@ function Contact() {
 
 
   return (
-    <section className={`${styles.section} bg-primary py-[80px] `} >
+    <section id="Contact" className={`${styles.section} bg-primary py-[80px] `} >
       
   <div className="flex flex-col md:flex-row items-center" >
     <div className=" flex flex-col md:flex-row items-center justify-between ">

@@ -4,9 +4,10 @@ import style from "./style";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
+
 function Protfolio() {
   return (
-    <section className="bg-primaryDark px-[140px] py-[80px] border-x-4  md:border-b-4 border-secondary">
+    <section id="protfolio" className="bg-primaryDark px-[140px] py-[80px] border-x-4  md:border-b-4 border-secondary">
       <div className="mb-8"> <SectionName content= "Portfolio" /> </div>
 
       <div className="flex flex-col gap-6 text-yellow-50 ">
@@ -28,7 +29,9 @@ function Protfolio() {
           </div>
 
           <div className={`bg-primary col-span-4 w-full h-full min-h-[220px] cursor-pointer
-             border-secondary ${item.position === "left" ? 'border-r-2 order-first' : 'border-l-2  '}`} > img</div>
+             border-secondary ${item.position === "left" ? 'border-r-2 order-first' : 'border-l-2  '}`} > 
+              <img className="object-cover" src={item.img} alt="" />
+             </div>
 
            </div>  ) }
 

@@ -36,23 +36,20 @@ export const testomonials = [
   
 ];
 
+import {foodSite ,carsSite} from "./assets/index";
+
+
 export const protfolio = [
   {
-    title:"Product title",
-    decription:"Welcome to James White's portfolio Elevating Welcome to James White's portfolio Elevating Welcome to James White's",
-    img:"",
+    title:"Order food site",
+    decription:"FLAVIRPLACE food order website build by React js and Styled By Tailwaind CSS and for the state managment we use Redux-TollKit ",
+    img:foodSite,
     position:"right"
   },
   {
-    title:"Product title",
-    decription:"Welcome to James White's portfolio Elevating Welcome to James White's portfolio Elevating Welcome to James White's",
-    img:"",
+    title:"Cars fix site",
+    decription:"PRIMEFIX cars fix website build by  React js and Tailwaind css  ",
+    img:carsSite,
     position:"left"
-  },
-  {
-    title:"Product title",
-    decription:"Welcome to James White's portfolio Elevating Welcome to James White's portfolio Elevating Welcome to James White's",
-    img:"",
-    position:"right"
   },
 ];
