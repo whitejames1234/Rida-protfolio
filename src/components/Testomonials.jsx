@@ -1,4 +1,4 @@
-import styles from "./style";
+import style from "./style";
 import StarRateIcon from '@mui/icons-material/StarRate';
 import {testomonials} from '../data';
 
@@ -10,18 +10,18 @@ import SwiperNavButton from "./SwiperNavButton";
 
 function Testomonials() {
   return (
-    <section className= {`${styles.section} bg-primary py-[80px] `} >
+    <section className= {`bg-primary ${style.border} ${style.paddingX} ${style.paddingY} !border-t-0 `} >
    {/* Section Name */}
       <div className="flex items-center gap-4 mb-[40px]  " >
             <div className="w-[8px] h-[36px] bg-secondary " ></div>
-            <h4 className={` ${styles.mediumHeading} text-yellow-50 `} >Testomonials</h4>
+            <h4 className={` ${style.mediumHeading} text-yellow-50 `} >Testomonials</h4>
       </div>
 
 
 <Swiper className='relative cursor-grab flex flex-col  '
     spaceBetween={40}
     slidesPerView={1}
-    breakpoints={{ 1000: { slidesPerView: 2 } }}
+    breakpoints={{ 920: { slidesPerView: 2 } }}
     pagination={{ clickable: true }}
     scrollbar={{ draggable: true }}
     onSlideChange={() => console.log('slide change')}

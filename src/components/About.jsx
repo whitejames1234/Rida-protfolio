@@ -7,10 +7,11 @@ import Upwork from "../ui/Upwork";
 
 function About() {
   return (
-    <section id="About" className= {` ${styles.section}  bg-primaryDark py-[80px] text-white `} >
+    <section id="About" className= {`${styles.paddingY}   ${styles.paddingX} ${styles.border} !border-t-0  bg-primaryDark `} >
 
-      <div className=" grid grid-cols-6 "  >
-        <div className="col-span-2 border-secondary border-4 px-6 py-6 flex flex-col justify-center gap-2	">
+      <div className=" grid grid-cols-1 md:grid-cols-6 border-[2px] border-secondary "  >
+        
+        <div className="md:col-span-2 px-6 py-6 flex flex-col justify-center gap-2	">
           <div className="border-2 border-secondary h-[120px] w-full "><img className="object-cover w-full h-full " src={about} alt="" /> </div>
           <h3 className={`${styles.smallHeading} mt-4 !text-secondary `} >Full-Stack Devloper </h3>
           <p className={`${styles.mainText}  `} >
@@ -24,8 +25,8 @@ function About() {
             <Upwork />
           </div>
         </div>
-        <div id="#about" className="col-span-4  border-secondary border-4 border-l-0 px-6 py-6 flex flex-col gap-4 ">
-        <h3 className={`${styles.smallHeading} mt-4 !text-secondary `} >What We Provide</h3>
+        <div  className="md:col-span-4  md:border-t-0 md:border-l-2 border-secondary  px-6 py-6 flex flex-col gap-4 ">
+        <h3 className={`${styles.mediumHeading} mt-4 !text-secondary `} >What We Provide</h3>
         <p className={`${styles.mainText} `} >
         I specialize in back and frontend development, seamlessly integrating the two to deliver 
         comprehensive solutions. My expertise includes:
@@ -35,7 +36,6 @@ function About() {
             create responsive, user-friendly interfaces.</p>
           <p className={`${styles.mainText} `}> <span className="font-semibold text-secondary">Backend Development:</span> Building secure and efficient server-side 
           applications with Node.js and MongoDB. </p>
-          <p className={`${styles.mainText} `}> <span className="font-semibold text-secondary">Full-Stack Integration:</span> Combining my skills to deliver end-to-end solutions that are both performant and maintainable.</p>
         </div>
         <p className={`${styles.mainText} `} >
           I pride myself on getting things done efficiently and effectively, always striving for excellence in every project I undertake. With a strong foundation in JavaScript and a keen eye for detail, I ensure that my code is clean, maintainable, and up to date-with the latest industry standards.

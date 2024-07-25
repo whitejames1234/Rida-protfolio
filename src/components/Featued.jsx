@@ -6,18 +6,18 @@ import Marquee from 'react-fast-marquee';
 
 function Featued() {
   return (
-      <section className="bg-primary py-[60px] border-b-4 border-x-4 border-secondary px-[100px] flex items-center gap-12 ">
+      <section className="bg-primary px-4 ss:px-8 py-8 !border-t-0 border-b-2 md:border-b-4 border-x-2 md:border-4 border-secondary  lg:px-[100px] flex flex-col md:flex-row items-center gap-12 ">
 
-        <div className="w-1/5 flex items-center gap-8"> 
+        <div className="self-start md:w-1/5 flex items-center gap-8"> 
           <h4 className ={`${styles.smallHeading} uppercase `} >tech stack </h4>
-          <span className=" bg-secondary h-12 w-2 "> </span>
+          <span className=" bg-secondary h-12 w-1 md:w-2 "> </span>
         </div>
 
-        <div className="w-3/4 ">
+        <div className="w-full md:w-3/4 ">
          <Marquee direction="left" speed={80} pauseOnHover={true} delay={2} className="cursor-pointer " >
           {
-            techStack.map((item, i) =><div key={i} className="ml-16 ">
-            <img src={item} alt="" className="h-14 w-auto " />
+            techStack.map((item, i) =><div key={i} className="ml-12 ">
+            <img src={item} alt="" className="lg:h-14 md:h-12 h-8  w-auto " />
           </div>  )
           }
         </Marquee>

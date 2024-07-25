@@ -1,15 +1,14 @@
 import styles from "./style";
 import {heroImg,  welcome} from "../assets/index";
 import { HashLink } from 'react-router-hash-link'
-import { motion } from "framer-motion"
 
 
 
 
 function Hero() {
   return (
-    <section className={`${styles.section} bg-primary  `} >
-      <div className=" grid grid-flow-row md:grid-cols-2 items-center gap-[60px] pt-[80px] pb-[80px] " >
+    <section className={`${styles.paddingX} ${styles.paddingY} ${styles.border} !border-t-0 bg-primary w-full h-full `} >
+      <div className=" grid grid-flow-row md:grid-cols-2 items-center gap-[50px]  " >
 
         {/* 01 */}
       <div className="flex flex-col gap-[10px] leftContainer" >
@@ -21,7 +20,7 @@ function Hero() {
         To  <span className="text-secondary" > The Real World </span> With The Latest 
         <span className="text-secondary"> Technology </span>
         </h2>
-        <p className= {`${styles.mainText} mt-4 `} > 
+        <p className= {`${styles.mainText} mt-2 `} > 
         Welcome to James White portfolio Elevating
          Experiences with React and Tailwind CSS. Explore the
           Intersection of Design and Technology to give our users/clients the
@@ -37,12 +36,12 @@ function Hero() {
 
 
       {/* div 02 */}
-      <motion.div 
+      <div 
        animate={{opacity: 1}}
        className="overflow-hidden flex justify-center w-full bg-primaryDark border-2 lg:border-4 border-secondary rounded-tl-[100px] rounded-br-[100px] " >
         <img src= {`${heroImg}`} alt="hero image" className="min-w-[270px] h-auto w-full max-w-[460px] " />
         
-      </motion.div>
+      </div>
 
 
       </div>

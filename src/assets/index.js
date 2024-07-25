@@ -33,6 +33,7 @@ import webDesing from "./webDesing.png"
 
 import foodSite from "./foodSite.png";
 import carsSite from "./carsSite.png";
+import bankSite from "./bankSite.png";
 
 export {
   logo,
@@ -67,6 +68,7 @@ export {
 
  foodSite,
  carsSite,
+ bankSite,
 };
 
 import html from "./html.png";

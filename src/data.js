@@ -36,7 +36,7 @@ export const testomonials = [
   
 ];
 
-import {foodSite ,carsSite} from "./assets/index";
+import {foodSite ,carsSite, bankSite} from "./assets/index";
 
 
 export const protfolio = [
@@ -44,12 +44,25 @@ export const protfolio = [
     title:"Order food site",
     decription:"FLAVIRPLACE food order website build by React js and Styled By Tailwaind CSS and for the state managment we use Redux-TollKit ",
     img:foodSite,
-    position:"right"
+    position:"right",
+    link:'https://flavir-plate.netlify.app/',
+    github:''
+
   },
   {
     title:"Cars fix site",
     decription:"PRIMEFIX cars fix website build by  React js and Tailwaind css  ",
     img:carsSite,
-    position:"left"
+    position:"left",
+    link:'https://primefex.netlify.app/',
+    github:''
+  },
+  {
+    title:"Cars fix site",
+    decription:"PRIMEFIX cars fix website build by  React js and Tailwaind css  ",
+    img:bankSite,
+    position:"right",
+    link:'',
+    github:''
   },
 ];
